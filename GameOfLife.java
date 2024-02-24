@@ -15,8 +15,8 @@ public class GameOfLife {
 		//// (Run one test at a time).
 		//test1(fileName);
 		//test2(fileName, i, j);
-		//test3(fileName, 3);
-		play(fileName);
+		test3(fileName, 3);
+		//play(fileName);
 		//System.out.println(count(read(fileName), i, j));
 	}
 	
@@ -157,7 +157,7 @@ public class GameOfLife {
     public static void print(int[][] board) {
 			for (int i = 1; i < board.length-1; i++){
 				for (int j = 1; j < board[0].length-1; j++) {
-					System.out.printf("Integer %d", board[i][j]);
+					System.out.print(" " + board[i][j] + " ");
 				}
 				System.out.println();
 			}
